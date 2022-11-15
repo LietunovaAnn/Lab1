@@ -19,12 +19,11 @@ public class Task2 {
 
 
             for (String word : distinct) {
-                int count = 1;
                 if (word.charAt(0) == '#') {
                     if (tag.containsKey(word)) {
                         tag.put(word, tag.get(word) + 1);
                     } else {
-                        tag.put(word, count);
+                        tag.put(word, 1);
                     }
                 }
             }
